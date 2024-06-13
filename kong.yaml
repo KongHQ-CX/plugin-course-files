@@ -1,0 +1,18 @@
+_format_version: "3.0"
+
+services:
+  - name: nowhere
+    url: http://localhost:8111
+
+    routes:
+      - name: nowhere
+        paths:
+          - "~/test$"
+    
+    plugins:
+      - name: myplugin
+        config: {}
+
+      - name: request-termination
+        config:
+          status_code: 200
