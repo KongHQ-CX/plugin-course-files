@@ -8,4 +8,4 @@ docker run -it --rm --name kong2 \
   -e "KONG_DECLARATIVE_CONFIG=/etc/kong/kong.yaml" \
   -e KONG_PLUGINS="bundled,myplugin" \
   -e KONG_PROXY_LISTEN="0.0.0.0:8000" \
-  kong:3.7
+  kong:3.4
