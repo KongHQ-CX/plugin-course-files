@@ -16,3 +16,4 @@ services:
       - name: request-termination
         config:
           status_code: 200
+          echo: true
